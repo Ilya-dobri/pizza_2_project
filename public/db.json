@@ -1,0 +1,104 @@
+{
+  "pizzas": [
+    {
+      "id": 0,
+      "imageUrl": "https://sun-pizza.com/thumb/2/y-XNBqHc2E0aFi4YAXgk9Q/650r650/d/img_2018-6.png",
+      "name": "Пепперони Фреш с перцем",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 803,
+      "category": 0,
+      "rating": 4
+    },
+    {
+      "id": 1,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDeWJiK4ftPaWnjZo0W1jSp1ROSFBfUk8TpGgfl7mZfIjTU8JfhnLwd9VPnvOE76iyvXI&usqp=CAU",
+      "name": "Сырная",
+      "types": [0],
+      "sizes": [26, 40],
+      "price": 245,
+      "category": 1,
+      "rating": 6
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1usJcJw832DjZTLo5PnCKQniyT9iTM6PUUA&s",
+      "name": "Цыпленок барбекю",
+      "types": [0],
+      "sizes": [26, 40],
+      "price": 295,
+      "category": 1,
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://cdn.carte.by/assets/2021/07/28/2f3642d7916a98cf02551f59cd1601---jpg_710x_83b40_convert.jpg",
+      "name": "Кисло-сладкий цыпленок",
+      "types": [1],
+      "sizes": [26, 30, 40],
+      "price": 275,
+      "category": 2,
+      "rating": 2
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://pizzaplace.com.ua/wp-content/uploads/2020/12/IMG_4834.jpg",
+      "name": "Чизбургер-пицца",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 415,
+      "category": 3,
+      "rating": 8
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCwa_94qQ5ca1a_HlCTI8NAHc5vDaR_Gx7mA&s",
+      "name": "Крэйзи пепперони",
+      "types": [0],
+      "sizes": [30, 40],
+      "price": 580,
+      "category": 2,
+      "rating": 2
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://pizza.od.ua/upload/resize_cache/webp/iblock/62e/4y05ehhgm88eupox5eh111jo1k2e94mq.webp",
+      "name": "Пепперони",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 675,
+      "category": 1,
+      "rating": 9
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzRavqzylm9OvilnSM30dWJk6STog4L09psg&s",
+      "name": "Маргарита",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 450,
+      "category": 4,
+      "rating": 10
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://ym1.by/wp-content/uploads/2022/02/92.jpg",
+      "name": "Четыре сезона",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 395,
+      "category": 5,
+      "rating": 10
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw17_adYujjTWEXqqy2fiTm7tJFDN8R6k7CfDpqIta6yOYZUUXzaeLBnrUybPAyndKZn0&usqp=CAU",
+      "name": "Овощи и грибы 🌱",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 285,
+      "category": 5,
+      "rating": 7
+    }
+  ]
+}

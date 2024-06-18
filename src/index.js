@@ -1,15 +1,25 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client'; // правильный импорт createRoot
+import { createRoot } from 'react-dom/client';
 import './scss/app.scss';
 import App from './App';
+import { BrowserRouter } from 'react-router-dom';
+import store from './Redux/store';
+import { Provider } from 'react-redux'
+import { type } from '@testing-library/user-event/dist/type';
 
-// Создаем корневой элемент
+
+
 const container = document.getElementById('root');
 const root = createRoot(container);
 
-// Рендерим приложение
+
+
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </BrowserRouter>
   </React.StrictMode>
 );
