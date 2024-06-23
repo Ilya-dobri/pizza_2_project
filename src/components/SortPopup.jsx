@@ -5,7 +5,7 @@ const SortPoput = memo(function SortPoput({ items, activeSortType, onClickSortTy
   const [visiblePopup, setVisiblePopup] = useState(false);
   const sortRef = useRef(null);
   const activeLabel = items.find((obj) => obj.type === activeSortType).name;
-  console.log(activeLabel)
+
 
   const onSelectItem = (type) => {
     onClickSortType(type);
@@ -27,7 +27,7 @@ const SortPoput = memo(function SortPoput({ items, activeSortType, onClickSortTy
   }, []);
   return (
     <div ref={sortRef} className='sort'>
-      <div className='sortlabel'>
+      <div className='sort__label'>
         <svg
           className={visiblePopup ? 'rotate' : ''}
           width='10'
@@ -44,13 +44,13 @@ const SortPoput = memo(function SortPoput({ items, activeSortType, onClickSortTy
         <span onClick={toggleVisiblePopup}>{activeLabel}</span>
       </div>
       {visiblePopup && (
-        <div className='sortpopup'>
+        <div className='sort__popup'>
           <ul>
             {items &&
               items.map((obj, index) => (
                 <li
                   className={activeSortType === obj.type ? 'active' : ''}
-                  onClick={() => onSelectItem(obj)}
+                  onClick={() => onSelectItem(obj.type)}
                   key={`${obj.type}_${index}`}>
                   {obj.name}
                 </li>
