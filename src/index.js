@@ -5,7 +5,7 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import store from './Redux/store';
 import { Provider } from 'react-redux'
-import { type } from '@testing-library/user-event/dist/type';
+
 
 
 

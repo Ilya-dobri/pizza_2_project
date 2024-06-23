@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 
 
 function PizzasBlock({ name, imageUrl, price, sizes, types }) {
+  
+
   const typeNames = ['тонкое', 'традиционное'];
   const availableSizes = [26, 30, 40];
 
@@ -17,6 +19,8 @@ function PizzasBlock({ name, imageUrl, price, sizes, types }) {
   const onSelectSize = (size) => {
     setActiveSize(size);
   };
+
+
 
   return (
     <div>
@@ -74,7 +78,7 @@ function PizzasBlock({ name, imageUrl, price, sizes, types }) {
   );
 }
 
-PizzasBlock.prototype = {
+PizzasBlock.propTypes = {
   name: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
