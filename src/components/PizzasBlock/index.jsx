@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types'
+import Button from '../Button';
 
-
-function PizzasBlock({ name, imageUrl, price, sizes, types }) {
+function PizzasBlock({id, name, imageUrl, price, sizes, types, onClickAddPizza, addedCountPizzas,  }) {
   
 
   const typeNames = ['тонкое', 'традиционное'];
@@ -20,7 +20,18 @@ function PizzasBlock({ name, imageUrl, price, sizes, types }) {
     setActiveSize(size);
   };
 
-
+  
+  const onAddPizza = () => {
+    const obj = {
+      id,
+      name,
+      imageUrl,
+      price,
+      size: activeSize,
+      type: typeNames[activeType],
+    }
+    onClickAddPizza(obj)
+  }
 
   return (
     <div>
@@ -57,7 +68,7 @@ function PizzasBlock({ name, imageUrl, price, sizes, types }) {
         </div>
         <div className='pizza-block__bottom'>
           <div className='pizza-block__price'>от {price} ₽</div>
-          <div className='button button--outline button--add'>
+          <Button onClick={onAddPizza} className='button--add' outline>
             <svg
               width='12'
               height='12'
@@ -70,8 +81,8 @@ function PizzasBlock({ name, imageUrl, price, sizes, types }) {
               />
             </svg>
             <span>Добавить</span>
-            <i>2</i>
-          </div>
+            {addedCountPizzas && <i>{addedCountPizzas}</i>}
+          </Button>
         </div>
       </div>
     </div>

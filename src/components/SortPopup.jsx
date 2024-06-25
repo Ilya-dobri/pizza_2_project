@@ -6,7 +6,6 @@ const SortPoput = memo(function SortPoput({ items, activeSortType, onClickSortTy
   const sortRef = useRef(null);
   const activeLabel = items.find((obj) => obj.type === activeSortType).name;
 
-
   const onSelectItem = (type) => {
     onClickSortType(type);
     setVisiblePopup(false);
